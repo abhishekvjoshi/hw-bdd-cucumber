@@ -31,7 +31,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   # enter step(s) to ensure that PG and R movies are visible
   Then I should see the movies: When Harry Met Sally, The Terminator, Amelie, The Incredibles, Raiders of the Lost Ark
   # enter step(s) to ensure that other movies are not visible
-  Then I should not see the ratings: Chocolat, The Help, 2001: A Space Odyssey, Chicken Run, Aladdin
+  Then I should not see the movies: Chocolat, The Help, 2001: A Space Odyssey, Chicken Run, Aladdin
 
 Scenario: all ratings selected
   # see assignment
