@@ -36,10 +36,9 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
     end
   else
     ratings.each do |r|
-      page.check("ratings_#{r}") #step "I check \"#{r}\""
+      page.check("ratings_#{r}")
     end
   end
-  #fail "Unimplemented"
 end
 
 Then /I should see the movies: (.*)/ do |movie_list|
